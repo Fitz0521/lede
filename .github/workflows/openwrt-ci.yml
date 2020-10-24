@@ -227,8 +227,6 @@ jobs:
         with:
           name: config.seed
           path: ./bin/targets/*/*/config.seed
-          name: OpenWrt_package
-          path: ./artifact/package/
 
       - name: Upload firmware
         uses: actions/upload-artifact@master
