@@ -207,7 +207,6 @@ jobs:
           du -h /mnt/openwrt/ --max-depth=1 || true
       - name: Prepare artifact
         run: find ./bin/targets/ -type d -name "packages" | xargs rm -rf {}
-        run: |
           mkdir -p ./artifact/firmware
           mkdir -p ./artifact/package
           mkdir -p ./artifact/buildinfo
